@@ -1,6 +1,6 @@
 ---
 - name: update web, nfs and db servers
-  hosts: webservers, nfs, db
+  hosts: webservers, nfs
   remote_user: ec2-user
   become: yes
   become_user: root
@@ -12,7 +12,7 @@
 
 - name: update LB server
   hosts: lb
-  remote_user: ubuntu
+  remote_user: ubuntu, db
   become: yes
   become_user: root
   tasks:
@@ -24,4 +24,3 @@
       apt:
         name: wireshark
         state: latest
-        
