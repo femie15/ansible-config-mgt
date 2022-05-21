@@ -1,20 +1,15 @@
-# [webservers]
-# 172.31.85.40 ansible_ssh_user='ec2-user'
-# 172.31.90.83 ansible_ssh_user='ec2-user'
-
 [nfs]
-172.31.6.219
+172.31.6.219 ansible_user=ec2-user ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [webservers]
-172.31.85.40
-172.31.90.83
+172.31.85.40 ansible_user=ec2-user ansible_ssh_private_key_file=~/.ssh/id_rsa
+172.31.90.83 ansible_user=ec2-user ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [db]
-172.31.13.186 ansible_user=ec2-user ansible_ssh_private_key_file=~/.ssh/id_rsa
+172.31.13.186
 
 [lb]
-172.31.13.93 ansible_user=ec2-user ansible_ssh_private_key_file=~/.ssh/id_rsa
-
+172.31.13.93
 
 [deployments:children]
 nfs
