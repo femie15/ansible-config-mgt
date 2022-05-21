@@ -62,8 +62,8 @@ apache_restart_state: restarted
 apache_packages_state: present
 
 #*****************vars for loadbalancing status***************
-# enable_apache_lb: false
-# load_balancer_is_required: false
+enable_apache_lb: false
+load_balancer_is_required: false
 
 loadbalancer_name: "myapp1"
 web1: "172.31.85.40 weight=3"
