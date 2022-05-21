@@ -9,7 +9,7 @@
 172.31.13.186 ansible_ssh_user='ubuntu'
 
 [lb]
-172.31.19.223 ansible_ssh_user='ubuntu'
+172.31.20.201 ansible_ssh_user='ubuntu'
 
 [deployments:children]
 nfs
