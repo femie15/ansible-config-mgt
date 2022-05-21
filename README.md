@@ -2,4 +2,4 @@
 
 test build
 
-test new directory
+test new directory.
